@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter",sans-serif;
+}
+:root{
+    --mainColor:#C47BE4;
+    --secondColor:white;
+    --mainBgC:black;
+}
+body{
+    background-color:var(--mainBgC) !important;
+    padding: 15% 7% 0 7%;
+}
+nav{
+    background-color: var(--mainBgC) !important;
+    color: white ;
+    font-size: 1.5em ;
+}
+nav ul{
+    margin-right: 7%;
+}
+nav li a{
+    color: white !important;
+    transition: all 1s;
+}
+#logo{
+    margin-left: 7%;
+    font-size: 1.5em;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    transition: all 1s;
+}
+#logo:hover,nav li a:hover{
+    cursor: pointer;
+    color: var(--mainColor) !important;
+    scale: 1.1;
+}
+nav button{
+    margin-right: 7%;
+}
+/* header section */
+.header{
+    padding: 5% 0;
+    width: 100%;
+    /* height: 78vh; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header .text{
+    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.header .text .text1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(132, 130, 130);
+}
+.header .text .text2{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+.header .text .text3{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondColor);
+}
+.header .text .text4{
+    font-size: 20px;
+    color: rgb(132, 130, 130);
+}
+.header .text .icons a i{
+    color: var(--mainColor);
+    font-size: 50px;
+    transition: all 1s;
+}
+.header .text .icons a i:hover{
+    color: var(--secondColor);
+    scale: 1.2;
+}
+.header .img{
+    background-color:var(--mainColor);
+    border-radius: 50%;
+    width: 410px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+/* about section */
+.about{
+    margin: 5% 0;
+    padding: 30px;
+    background-color: black;
+    box-shadow: rgba(117, 116, 116, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .text{
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.about .text .text1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(132, 130, 130);
+}
+.about .text .text2{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+.about .text .text3{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondColor);
+}
+.about .text .text4{
+    font-size: 20px;
+    color: rgb(132, 130, 130);
+}
+.jobs{
+    color: var(--secondColor);
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.jobs i{
+    color: var(--mainColor);
+    font-size: 30px;
+}
+
+@media screen  and (max-width:1046px){
+    .header .text{
+    width: 400px;
+}
+.header .text .text1{
+    font-size: 25px;
+}
+.header .text .text2{
+    font-size: 50px;
+}
+.header .text .text3{
+    font-size: 30px;
+}
+.header .text .text4{
+    font-size: 15px;
+}
+.header .text .icons a i{
+    font-size: 40px;
+}
+}
+@media screen and (max-width:991px){
+    nav ul li a{
+        margin-left: 7%;
+    }
+    .header .text{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+    .header .text .text1{
+        font-size: 30px;
+    }
+    .header .text .text2{
+        font-size: 60px;
+    }
+    .header .text .text3{
+        font-size: 40px;
+    }
+    .header .text .text4{
+        font-size: 20px;
+    }
+    .header .text .icons a i{
+        font-size: 50px;
+    }
+    .header .img{
+        margin: 10% auto;
+    
+}
+
+
+
+}
+@media screen and (max-width:549px){
+    body{
+        padding-top: 35%;
+    }
+
+    .header .text .text1{
+        font-size: 20px;
+    }
+    .header .text .text2{
+        font-size: 40px;
+    }
+    .header .text .text3{
+        font-size: 20px;
+    }
+    .header .text .text4{
+        font-size:15;
+    }
+    .header .text .icons a i{
+        font-size: 50px;
+    }
+    .header .img{
+    width: 350px;
+    height: 350px;
+}
+.header .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+    /* about section */
+.about .text{
+    text-align: center;
+    width: 100%;
+}
+.about .text .text1{
+    font-size: 20px;
+}
+.about .text .text2{
+    font-size: 22px;
+}
+.about .text .text3{
+    font-size: 20px;
+}
+.about .text .text4{
+    font-size: 15px;
+}
+.jobs{
+    width: 100%;
+    justify-content: space-around;
+}
+.jobs i{
+    font-size: 20px;
+}
+}
+@media screen and (max-width:400px){
+    nav{
+        font-size: 1.2em;
+    }
+    nav ul{
+    margin-right: 0;
+}
+    #logo{
+        margin-left: 0;
+        font-size: 1.2em;
+    }
+    #logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .header .text .icons a i{
+        font-size: 40px;
+    }
+    .header .img img{
+        width: 300px;
+        height: 300px;
+    }
+    .header .text .text1{
+        font-size: 20px;
+    }
+    .header .text .text2{
+        font-size: 30px;
+    }
+    .header .text .text3{
+        font-size: 20px;
+    }
+    .header .text .text4{
+        font-size:15;
+    }
+    .header .img{
+    width: 250px;
+    height: 250px;
+}
+.header .img img{
+    width: 100%;
+    height: 100%;
+}
+}
