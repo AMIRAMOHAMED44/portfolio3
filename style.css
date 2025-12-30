@@ -163,7 +163,7 @@ nav button{
 /* services  */
 .services-parent{
     width: 100%;
-    padding-top: 10% ;
+    padding-top: 8% ;
 }
 .services-parent h1{
     text-align: center;
@@ -220,7 +220,7 @@ nav button{
 }
 /* projects */
 .projects-parent{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .projects-parent h1{
@@ -253,9 +253,12 @@ nav button{
 .project .img img{
     width: 90%;
     transition: all 2s;
+    border-radius: 0 20px;
 }
 .project .img img:hover{
     scale: 1.1;
+    border-radius: 20px 0px;
+
 }
 .project .text{
     width: 40%;
@@ -287,6 +290,40 @@ nav button{
 .project .text .repo-link{
     margin-left: 20px;
 }
+/* footer */
+.footer{
+    border-top: 4px solid var(--mainColor);
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-info h3{
+    color: var(--mainColor);
+    font-size: 30px;
+}
+.footer .footer-info i{
+    color: var(--mainColor);
+    font-size: 20px;
+}
+.footer .footer-info p{
+    color: var(--secondColor);
+}
+.footer .footer-social a i{
+    color: var(--secondColor);
+    font-size: 40px;
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+.footer .footer-social a i:hover{
+    color: var(--mainColor);
+    scale: 1.2;
+}
+.footer .footer-social p{
+    color:rgb(126, 126, 123);
+}
+
+
+
 
 
 @media screen  and (max-width:1046px){
@@ -358,6 +395,11 @@ nav button{
 .project .text{
     width: 80%;
     margin: 40px 0;
+}
+/* footer */
+.footer{
+    flex-direction: column;
+    text-align: center;
 }
 
 
@@ -524,4 +566,25 @@ nav button{
     width: 90%;
     margin: 40px 0;
 }
+/* footer */
+.footer{
+    padding: 20px;
+}
+.footer .footer-info h3{
+    font-size: 20px;
+}
+.footer .footer-info i{
+    font-size: 15px;
+}
+.footer .footer-info p{
+    font-size:15px ;
+}
+.footer .footer-social a i{
+    font-size: 30px;
+}
+
+.footer .footer-social p{
+    color:rgb(126, 126, 123);
+}
+
 }
